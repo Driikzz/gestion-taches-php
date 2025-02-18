@@ -31,7 +31,7 @@ cd gestion-taches-php
 ### **3 database.php**
 ```php
 <?php
-$host = '127.0.0.1'; 
+$host = 'localhost'; 
 $dbname = 'tpphp'; 
 $username = 'root'; 
 $password = ''; 
