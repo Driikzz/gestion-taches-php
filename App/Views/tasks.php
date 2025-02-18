@@ -13,7 +13,7 @@
     <?php foreach ($tasks as $task): ?>
         <li>
             <?= htmlspecialchars($task['title']) ?> - <?= htmlspecialchars($task['status']) ?>
-            <form action="/tasks/update/<?= $task['id'] ?>" method="POST">
+            <form action="/tasks/edit/<?= $task['id'] ?>" method="POST">
               <select name="status">
                   <option value="À faire" <?= $task['status'] == "À faire" ? "selected" : "" ?>>À faire</option>
                   <option value="En cours" <?= $task['status'] == "En cours" ? "selected" : "" ?>>En cours</option>
